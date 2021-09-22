@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <div id="app">
+      <img v-bind:src="imgURL" alt="" />
+      <a v-bind:href="aHref">百度一下</a>
+    </div>
 
-<div id="app">
-  <img v-bind:src="imgURL" alt="">
-  <a v-bind:href="aHref">百度一下</a>
-
-</div>
-
-<script src="../js/vue.js"></script>
-<script>
-  const app = new Vue({
-    el :'#app',
-    data: {
-      message: '你好啊',
-      imgURL: 'https://img12.360buyimg.com/babel/s1180x940_jfs/t1/62456/25/17352/260050/613f05e2Ec39527f0/944cd690a8ddace1.jpg.webp',
-      aHref: 'http://www.baidu.com'
-    }
-  })
-</script>
-
-</body>
+    <script src="../js/vue.js"></script>
+    <script>
+      const app = new Vue({
+        el: "#app",
+        data: {
+          message: "你好啊",
+          imgURL:
+            "https://img12.360buyimg.com/babel/s1180x940_jfs/t1/62456/25/17352/260050/613f05e2Ec39527f0/944cd690a8ddace1.jpg.webp",
+          aHref: "http://www.baidu.com",
+        },
+      });
+    </script>
+  </body>
 </html>
